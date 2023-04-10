@@ -1,0 +1,66 @@
+nav[class^="header-row-"]{
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    position: relative;
+}
+
+[class^=header-row-] > *{
+    font-size: 20px;
+}
+
+[class^=header-row-] > div > p{
+    color: red;
+    height: inherit;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.header-add{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+}
+.header-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+}
+/* Linee */
+
+[class^=header-row-] > *:nth-child(4n+1) {
+    border-left: none;
+}
+
+[class^=header-row-]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+[class=header-row-1]::after{
+    opacity: 0.5;
+}
+
+/* Elenco seconda riga header */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+li{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
