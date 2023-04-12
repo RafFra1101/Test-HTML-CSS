@@ -4,17 +4,26 @@ nav[class^="header-row-"]{
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
     position: relative;
+    height: auto;
 }
 
 [class^=header-row-] > *{
-    font-size: 20px;
+    font-size: 125%;
 }
 
 [class^=header-row-] > div > p{
-    color: red;
     height: inherit;
     border-left: 1px solid black;
     text-align: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: center;
 }
 
 .header-add{
@@ -26,6 +35,14 @@ nav[class^="header-row-"]{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: auto;
+    align-content: center;
+    align-items: center;
+}
+
+.header-buttons > p{
+    box-sizing: content-box;
+    border-left: 1px solid black;
+    text-align: center;
 }
 /* Linee */
 
@@ -50,9 +67,9 @@ nav[class^="header-row-"]{
 /* Elenco seconda riga header */
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 1% 5% 1% 5%;
+    display: inline-block;
 }
 
 
@@ -61,6 +78,13 @@ li{
     display: block;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
+    margin: 0px;
+}
+
+@media screen and (max-device-width: 600px){
+    li{
+        font-size: 40px;
+    }
 }
