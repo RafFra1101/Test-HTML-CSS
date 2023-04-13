@@ -1,0 +1,18 @@
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+@media screen and (max-device-width: 600px){
+    .main{
+        grid-template-columns: auto;
+    }
+
+    .main > div{
+        border-bottom: double rgba(0, 0, 0, 0.75);
+    }
+
+}
+
+

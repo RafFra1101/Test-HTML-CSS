@@ -1,151 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>The Telegraph</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
+    <script src="include.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/opinioni.css">
+    <link rel="stylesheet" href="css/articoli.css">
 <body>
-<div>
-    <nav class="header-row-1">
-        <div class="logo">
-            <img src="https://via.placeholder.com/284x46?text=Logo">
-        </div>
-        <div class="header-add">
-            <p>R1C2</p>
-            <p>R1C3</p>
-            <p>R1C4</p>
-        </div>
+    <div w3-include-html="html/header.html"></div>
 
-    </nav>
-    <nav class="header-row-2">
-        <nav class="header-nav">
-            <ul>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-                <li>d</li>
-                <li>e</li>
-                <li>f</li>
-            </ul>
-        </nav>
-        <div class="header-buttons">
-            <p><img src="img/search.png" style="width: 50px"></p>
-            <p>sub</p>
-            <p>log in</p>
-            <p>side menu</p>
-        </div>
-    </nav>
-</div>
-
-<div class="main">
-
-    <div class="articoli-1">
-        <h3>Categoria 1</h3>
-        <div class="cols-2">
-            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
-        </div>
-        <div class="cols-2">
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-    </div>
-    <div class="articoli-2">
-        <h3>Categoria 2</h3>
-        <div>
-            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
-        </div>
-        <div>
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-    </div>
-    <div class="articoli-3">
-        <h3>Categoria 3</h3>
-        <div class="cols-4">
-            <img src="https://via.placeholder.com/640x400">
-            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
-
-        </div>
-        <div>
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-        <div>
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
+    <div class="main">
+        <div w3-include-html="html/articoli.html" class="articoli"></div>
+        <div w3-include-html="html/opinioni.html"></div>
     </div>
 
-    <div class="articoli-3">
-        <h3>Categoria 4</h3>
-        <div class="cols-4">
-            <img src="https://via.placeholder.com/640x400">
-            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
-
-        </div>
-        <div>
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-        <div>
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-    </div>
-    <div class="articoli-2">
-        <h3>Categoria 5</h3>
-        <div>
-            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
-        </div>
-        <div>
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-    </div>
-    <div class="articoli-1">
-        <h3>Categoria 6</h3>
-        <div class="cols-2">
-            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
-        </div>
-        <div class="cols-2">
-            <p>Aperiam harum ipsum maiores minima omnis reiciendis, veniam. </p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-        <div>
-            <p>Aliquam aperiam at, delectus, ducimus facere hic in maiores nam provident saepe vitae, voluptate!</p>
-        </div>
-    </div>
-    <div class="opinioni">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-            Lorem ipsum dolor sit amt amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-            Lorem ipsum dolor sit amt amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aspernatur, autem, cumque earum enim eum hic id ipsa itaque perspiciatis possimus quae quos ratione similique ullam vel vitae voluptates.
-        </p>
-    </div>
-</div>
-
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>

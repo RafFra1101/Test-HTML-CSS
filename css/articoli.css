@@ -1,15 +1,12 @@
-
-.main{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-}
-
-.main > [class^=articoli-] > *{
+[class^=articoli-] > *{
     padding: 1% 5% 1% 5%;
 }
 
-
-/*Articoli*/
+.articoli{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
 
 .articoli-1{
     display: grid;
@@ -49,7 +46,7 @@
     border-bottom: double rgba(0, 0, 0, 0.5);
 }
 
-.articoli-1, .articoli-1 > *:nth-child(5n+4), .articoli-3 > *:nth-child(n+3){
+.articoli-1 > *:nth-child(5n+4), .articoli-3 > *:nth-child(n+3){
     border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -66,9 +63,8 @@
     border-right: none;
 }
 
-.opinioni{
-    grid-column: 4/6;
-    grid-row: 1/10;
+.articoli > *{
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-device-width: 600px){
@@ -76,16 +72,3 @@
         float: right;
     }
 }
-
-@media screen and (max-device-width: 600px){
-    .main{
-        grid-template-columns: auto;
-    }
-
-    .main > div{
-        border-bottom: double rgba(0, 0, 0, 0.75);
-    }
-
-}
-
-
