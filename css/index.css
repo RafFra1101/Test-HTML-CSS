@@ -1,12 +1,25 @@
 
-.main{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+
+
+@media screen and (min-device-width: 600px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 }
 
 @media screen and (max-device-width: 600px){
     .main{
         grid-template-columns: auto;
+        column-gap: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-auto-flow: row;
+        justify-items: center;
     }
 
     .main > div{

@@ -3,7 +3,10 @@
     grid-row: 1/10;
     display: grid;
     grid-template-columns: auto;
+    background: #F9F6F2;
 }
+
+
 
 .people-1-person{
     display: flex;
@@ -11,7 +14,7 @@
 
 .face{
     float: right;
-    align-self: flex-end;
+    align-self: center;
     margin-left: auto;
 }
 
@@ -19,18 +22,27 @@
     border-bottom: 1px solid rgba(0,0,0,0.75);
 }
 
+.people-1>*:nth-last-child(1){
+    border-bottom: none;
+}
+
 .titolo{
+
     text-align: center;
 }
 
 .opinioni > div{
     border-top: double rgba(0,0,0,0.75);
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 .people-2{
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
+
+
 
 .people-2 > *:nth-child(even){
     border-left: 1px solid rgba(0,0,0,0.75);
@@ -106,5 +118,21 @@
     height: 1px;
     background: rgba(0,0,0,0.75);
     z-index: -1;
+}
+
+@media screen and (max-device-width: 600px){
+    .face{
+        width: 150px;
+        align-self: flex-end;
+    }
+
+    .people-1-person{
+        padding-bottom: 5%;
+        display: flex;
+    }
+
+    .people-1-person > div{
+        width: 75%;
+    }
 }
 
