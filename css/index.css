@@ -27,4 +27,14 @@
 
 }
 
+.img-right{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.img-right > img{
+    min-width: 200px;
+    padding-bottom: 5%;
+}
+
 
