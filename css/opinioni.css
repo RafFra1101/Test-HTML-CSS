@@ -6,8 +6,6 @@
     background: #F9F6F2;
 }
 
-
-
 .people-1-person{
     display: flex;
 }
@@ -27,7 +25,6 @@
 }
 
 .titolo{
-
     text-align: center;
 }
 
@@ -40,12 +37,14 @@
 .people-2{
     display: grid;
     grid-template-columns: repeat(2, auto);
+
 }
 
 
 
 .people-2 > *:nth-child(even){
     border-left: 1px solid rgba(0,0,0,0.75);
+    padding-left: 5%;
 }
 
 .people-2 > *:nth-child(n+3){
@@ -67,15 +66,15 @@
 
 }
 
-.comicImg::after{
+.comicImg:after{
     content: "";
     width: 100%;
     position: absolute;
     left: 0;
     bottom: -5%;
     height: 1px;
-    background: rgba(0,0,0,0.75);;
-    z-index: -1;
+    background: rgba(0,0,0,0.75);
+    z-index: 2;
 }
 
 .opinion-text{
@@ -86,16 +85,15 @@
     position: relative;
 }
 
-.opinion-text:after {
+.opinion-text:after{
     content: "";
-    width: 80%;
     position: absolute;
     left: 10%;
     bottom: -5%;
     height: 1px;
     background: rgba(0,0,0,0.75);
-    z-index: -1;
 }
+
 
 .opinion-list > *:nth-child(n+2){
     display: grid;
@@ -117,7 +115,6 @@
     bottom: -5%;
     height: 1px;
     background: rgba(0,0,0,0.75);
-    z-index: -1;
 }
 
 @media screen and (max-device-width: 600px){
@@ -134,5 +131,7 @@
     .people-1-person > div{
         width: 75%;
     }
+
+
 }
 

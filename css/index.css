@@ -16,8 +16,7 @@
     .main{
         grid-template-columns: auto;
         column-gap: 2%;
-        margin-left: 10%;
-        margin-right: 10%;
+
         grid-auto-flow: row;
         justify-items: center;
     }
