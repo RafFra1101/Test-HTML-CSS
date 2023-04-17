@@ -1,7 +1,26 @@
 
+.img-right{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
 
+.img-right > * > img{
+    min-width: 100px;
+    padding-bottom: 5%;
+    justify-self: flex-end;
 
-@media screen and (min-device-width: 600px){
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.underline:hover{
+    text-decoration: 2px rgba(0,0,0,0.5) underline;
+}
+
+@media screen and (min-width: 1024px){
     .main{
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -10,9 +29,23 @@
         margin-right: 10%;
     }
 
+    h2{
+        min-font-size: 40px;
+        max-font-size: 40px;
+    }
+
+    h3{
+        min-font-size: 20px;
+        max-font-size: 30px;
+    }
+    p, a{
+        max-font-size: 20px;
+        min-font-size: 10px;
+    }
+
 }
 
-@media screen and (max-device-width: 600px){
+@media screen and (max-width: 1024px){
     .main{
         grid-template-columns: auto;
         column-gap: 2%;
@@ -21,20 +54,32 @@
         justify-items: center;
     }
 
-    .main > div{
-        border-bottom: double rgba(0, 0, 0, 0.75);
+    h2{
+        min-font-size: 20px;
+        max-font-size: 30px;
+    }
+
+    h3{
+        min-font-size: 20px;
+        max-font-size: 30px;
+    }
+    p, a{
+        max-font-size: 20px;
+        min-font-size: 10px;
+    }
+
+    .img-right > * > img{
+        min-width: 200px;
     }
 
 }
 
-.img-right{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
 
-.img-right > img{
-    min-width: 200px;
-    padding-bottom: 5%;
+/*
+.underline{
+    color: black;
+    text-decoration: none;
 }
+*/
 
 

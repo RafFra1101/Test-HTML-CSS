@@ -13,6 +13,7 @@
 .face{
     float: right;
     align-self: center;
+    justify-self: center;
     margin-left: auto;
 }
 
@@ -59,6 +60,7 @@
     padding-bottom: 5%;
 }
 
+
 .comicImg{
     display: block;
     text-align: center;
@@ -88,6 +90,7 @@
 .opinion-text:after{
     content: "";
     position: absolute;
+    width: 80%;
     left: 10%;
     bottom: -5%;
     height: 1px;
@@ -99,25 +102,28 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     padding-top: 2%;
+
 }
 
 .opinion-list > *:nth-child(n+2) > *:nth-child(2n+1){
     display: block;
     text-align: center;
     position: relative;
+    padding-right: 5%;
 }
 
-.opinion-list > *:nth-child(n+2) > *:nth-child(2n+1):after{
-    content: "";
-    height: 80%;
-    position: absolute;
-    left: 10%;
-    bottom: -5%;
-    height: 1px;
-    background: rgba(0,0,0,0.75);
+.opinion-list > *:nth-child(n+2) > *:nth-last-child(1){
+    border-left: 1px solid rgba(0,0,0,0.5);
+    padding-left: 5%;
 }
+
 
 @media screen and (max-device-width: 600px){
+
+    .titolo{
+        padding-top: 5%;
+    }
+
     .face{
         width: 150px;
         align-self: flex-end;
