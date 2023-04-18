@@ -3,21 +3,22 @@
 }
 
 .sport > h2{
-    border-bottom: 3px double rgba(0,0,0,0.5);
-    border-top: 1px solid rgba(0,0,0,0.75);
+    border-bottom: var(--border-double);
 }
 
-
+.sport > div{
+    border-bottom: var(--border-1);
+}
 
 @media screen and (min-width: 1024px){
     .sport{
         grid-column: 1/4;
         grid-template-columns: repeat(3, auto);
-        grid-template-rows: 70px repeat(4, 60px);
+        grid-template-rows: 70px repeat(4, 80px);
     }
 
     .sport > div{
-        border-bottom: 1px solid rgba(0,0,0,0.5);
+        border-bottom: var(--border-1);
     }
 
     .sport > h2{
@@ -30,12 +31,13 @@
     }
 
     .sport > *:nth-last-child(-n+4){
-        border-left: 1px solid rgba(0,0,0,0.5);
+        border-left: var(--border-1);
         padding-left: 5%;
     }
 
     .sport > *:nth-child(7n+3), .sport > *:nth-child(7n+4){
         grid-row: 5;
+        padding-right: 5%;
     }
     .sport > *:nth-child(n+5){
         grid-column: 3/4;
@@ -55,13 +57,11 @@
     }
 
     .sport > *:nth-last-child(1){
-        border-left: 1px solid rgba(0,0,0,0.5);
+        border-left: var(--border-1);
         padding-left: 5%;
     }
 
-    .sport > div:not(:nth-last-child(-n+2)){
-        border-bottom: 1px solid rgba(0,0,0,0.5);
-    }
+
 
 
 

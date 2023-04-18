@@ -4,13 +4,13 @@
 }
 
 .news > h2{
-    border-bottom: double rgba(0,0,0,0.5);
-    border-top: 1px solid rgba(0,0,0,0.75);
+    border-bottom: var(--border-double);
 }
 
 .news > div{
-    border-bottom: 1px solid rgba(0,0,0,0.5);
+    border-bottom: var(--border-1);
 }
+
 
 @media screen and (min-width: 1024px){
     .news{
@@ -31,7 +31,7 @@
 
     .news > *:nth-last-child(-n+3),
     .news > *:nth-child(n+3):not(:nth-last-child(-n+4)):nth-child(even){
-        border-left: 1px solid rgba(0,0,0,0.5);
+        border-left: var(--border-1);
         padding-left: 5%;
     }
 
@@ -52,9 +52,8 @@
     }
 
 
-
-    .news > *:nth-last-child(-n + 4):nth-of-type(even){
-        border-left: 1px solid rgba(0,0,0,0.5);
+    .news > *:nth-last-child(-n + 4):nth-of-type(odd){
+        border-left: var(--border-1);
         padding-left: 5%;
     }
 }

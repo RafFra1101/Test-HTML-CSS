@@ -1,3 +1,14 @@
+.main, .header, .side-menu{
+
+    --border-1: 1px solid rgba(0,0,0, 0.5);
+    --border-2: 1px solid rgba(0,0,0, 0.75);
+    --border-double: 4px double rgba(0,0,0, 0.75);
+}
+
+.side-menu{
+    display: none;
+}
+
 
 .img-right{
     display: grid;
@@ -5,10 +16,8 @@
 }
 
 .img-right > * > img{
-    min-width: 100px;
     padding-bottom: 5%;
     justify-self: flex-end;
-
 }
 
 a{
@@ -43,14 +52,17 @@ a{
         min-font-size: 10px;
     }
 
+
 }
 
 @media screen and (max-width: 1024px){
-    .main{
-        grid-template-columns: auto;
-        column-gap: 2%;
+    .site-wrapper{
+        overflow-x: hidden;
+    }
 
-        grid-auto-flow: row;
+
+
+    .main{;
         justify-items: center;
     }
 
@@ -74,12 +86,5 @@ a{
 
 }
 
-
-/*
-.underline{
-    color: black;
-    text-decoration: none;
-}
-*/
 
 

@@ -3,11 +3,12 @@
 }
 
 .business > h2{
-    border-bottom: 3px double rgba(0,0,0,0.5);
-    border-top: 1px solid rgba(0,0,0,0.75);
+    border-bottom: var(--border-double);
 }
 
-
+.business > div{
+    border-bottom: var(--border-1);
+}
 
 @media screen and (min-width: 1024px){
     .business{
@@ -15,9 +16,7 @@
         grid-template-columns: fit-content(300px);
     }
 
-    .business > div{
-        border-bottom: 1px solid rgba(0,0,0,0.5);
-    }
+
 }
 
 @media screen and (max-width: 1024px){
@@ -25,16 +24,12 @@
         grid-template-columns: repeat(2, auto);
     }
 
-    .business > div:not(:nth-last-child(-n+2)){
-        border-bottom: 1px solid rgba(0,0,0,0.5);
-    }
-
     .business > *:not(:nth-last-child(-n + 4)){
         grid-column: 1/3;
     }
 
     .business > *:nth-last-child(-n + 4):nth-of-type(even){
-        border-left: 1px solid rgba(0,0,0,0.5);
+        border-left: var(--border-1);
         padding-left: 5%;
     }
 

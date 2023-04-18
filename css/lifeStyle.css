@@ -1,0 +1,71 @@
+@media screen and (min-width: 1024px){
+    .life{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-areas:
+    'h h h'
+    'a b1 b2'
+    'a b1 b2'
+    'a b1 b2'
+    'a c1 c2'
+    'a c3 c4'
+    'd e e';
+        grid-template-columns: 750px repeat(2, 400px);
+        grid-template-rows: repeat(7, auto);
+    }
+
+    .life > h2{
+        grid-area: h;
+    }
+
+    .life > * {
+        border-bottom: var(--border-1);
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+    .life > *:nth-child(even):not(:nth-child(10n+2)){
+        border-left: var(--border-1);
+    }
+
+    .life > *:nth-child(10n+2){
+        border-right: var(--border-1);
+    }
+
+    .life > .img-right > a + a{
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .life{
+        display: grid;
+        grid-template-areas:
+    'h h'
+    'a a'
+    'b1 b1'
+    'b2 b2'
+    'c1 c1'
+    'c2 c2'
+    'c3 c4'
+    'd d'
+    'e e';
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .life > * {
+        border-bottom: var(--border-1);
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+
+    .life > *:nth-child(10n+8){
+        border-left: var(--border-1);
+        padding-left: 5%;
+    }
+
+    .life > .img-right > a + a{
+        padding-left: 2%;
+    }
+}

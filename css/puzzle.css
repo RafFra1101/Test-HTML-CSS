@@ -1,0 +1,63 @@
+@media screen and (min-width: 1024px){
+    .puzzle{
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .puzzle > h2{
+        grid-column: span 4;
+    }
+
+    .puzzle > div{
+        border-bottom: var(--border-1);
+        border-top: var(--border-1);
+        padding-top: 2%;
+        padding-right: 2%;
+    }
+
+    .puzzle > div:nth-last-child(-n+3){
+        border-left: var(--border-1);
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .puzzle{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .puzzle > h2{
+        grid-column: span 2;
+        padding-bottom: 2%;
+    }
+
+    .puzzle > *{
+        border-bottom: var(--border-1);
+    }
+
+    .puzzle > *:nth-last-child(-n+4):nth-child(even){
+        border-right: var(--border-1);
+        padding-right: 5%;
+    }
+
+    .puzzle > *:nth-last-child(-n+4):nth-child(odd){
+        padding-left: 5%;
+    }
+
+    .puzzle > *:nth-last-child(-n+2){
+        padding-top: 2%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .puzzle > *:nth-child(n+1){
+        grid-column: span 2;
+    }
+
+    .puzzle > *:nth-last-child(-n+3){
+        padding-top: 2%;
+    }
+}

@@ -18,7 +18,7 @@
 }
 
 .people-1-person{
-    border-bottom: 1px solid rgba(0,0,0,0.75);
+    border-bottom: var(--border-2);
 }
 
 .people-1>*:nth-last-child(1){
@@ -30,7 +30,7 @@
 }
 
 .opinioni > div{
-    border-top: double rgba(0,0,0,0.75);
+    border-top: var(--border-double);
     padding-right: 2%;
     padding-left: 2%;
 }
@@ -44,12 +44,12 @@
 
 
 .people-2 > *:nth-child(even){
-    border-left: 1px solid rgba(0,0,0,0.75);
+    border-left: var(--border-2);
     padding-left: 5%;
 }
 
 .people-2 > *:nth-child(n+3){
-    border-top: 1px solid rgba(0,0,0,0.75);
+    border-top: var(--border-2);
 }
 
 .opinion-box{
@@ -113,9 +113,12 @@
 }
 
 .opinion-list > *:nth-child(n+2) > *:nth-last-child(1){
-    border-left: 1px solid rgba(0,0,0,0.5);
+    border-left: var(--border-1);
     padding-left: 5%;
 }
+
+
+
 
 
 @media screen and (max-device-width: 600px){

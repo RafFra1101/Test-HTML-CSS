@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>The Telegraph</title>
-    <script src="include.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/opinioni.css">
@@ -10,16 +10,27 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/business.css">
     <link rel="stylesheet" href="css/sport.css">
+    <link rel="stylesheet" href="css/puzzle.css">
+    <link rel="stylesheet" href="css/lifeStyle.css">
 <body>
-    <div w3-include-html="html/header.html"></div>
+<div class="site-wrapper">
+    <div data-include-html="html/header.html" class="header view-0"></div>
 
-    <div class="main">
-        <div w3-include-html="html/articoli.html" class="articles"></div>
-        <div w3-include-html="html/opinioni.html"></div>
-        <div w3-include-html="html/news.html" class="news"></div>
-        <div w3-include-html="html/business.html" class="business"></div>
-        <div w3-include-html="html/sport.html" class="sport"></div>
+    <div class="main view-0" >
+        <div data-include-html="html/articoli.html" class="articles"></div>
+        <div data-include-html="html/opinioni.html"></div>
+        <div data-include-html="html/news.html" class="news"></div>
+        <div data-include-html="html/business.html" class="business"></div>
+        <div data-include-html="html/sport.html" class="sport"></div>
+        <div data-include-html="html/puzzle.html" class="puzzle"></div>
+        <div data-include-html="html/lifeStyle.html" class="life"></div>
     </div>
+
+    <div class="side-menu view-1">
+    </div>
+</div>
+
+
 
 
     <script>
