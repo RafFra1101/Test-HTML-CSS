@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="css/sport.css">
     <link rel="stylesheet" href="css/puzzle.css">
     <link rel="stylesheet" href="css/lifeStyle.css">
+    <link rel="stylesheet" href="css/arts.css">
+    <link rel="stylesheet" href="css/sidemenu.css">
+
 <body>
 <div class="site-wrapper">
+    <div data-include-html="html/sidemenu.html" class="side-menu view-1"></div>
     <div data-include-html="html/header.html" class="header view-0"></div>
 
     <div class="main view-0" >
@@ -24,10 +28,10 @@
         <div data-include-html="html/sport.html" class="sport"></div>
         <div data-include-html="html/puzzle.html" class="puzzle"></div>
         <div data-include-html="html/lifeStyle.html" class="life"></div>
+        <div data-include-html="html/arts.html" class="arts"></div>
     </div>
 
-    <div class="side-menu view-1">
-    </div>
+
 </div>
 
 
@@ -35,6 +39,7 @@
 
     <script>
         includeHTML();
+        switchView();
     </script>
 </body>
 </html>

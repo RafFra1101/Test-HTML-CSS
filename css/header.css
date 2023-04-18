@@ -43,9 +43,7 @@
     align-self: center;
 }
 
-.logo > img{
-    max-width: 400px;
-}
+
 
 .header-add{
     display: grid;
@@ -72,6 +70,11 @@
 
 
 @media screen and (min-width: 1024px){
+    .logo > img{
+        min-width: 50%;
+        max-width: 80%;
+    }
+
     .header{
         border-bottom: var(--border-2);
     }
@@ -110,10 +113,15 @@
         grid-template-columns: 40% 60%;
     }
 
+
     .logo{
         padding-right: 5%;
     }
 
+    .logo > img{
+        min-width: 150%;
+        max-width: 200%;
+    }
 
     .header-buttons{
         font-size: 40px;

@@ -9,7 +9,6 @@
     display: none;
 }
 
-
 .img-right{
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -17,7 +16,6 @@
 
 .img-right > * > img{
     padding-bottom: 5%;
-    justify-self: flex-end;
 }
 
 a{
@@ -29,7 +27,7 @@ a{
     text-decoration: 2px rgba(0,0,0,0.5) underline;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1600px){
     .main{
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -37,7 +35,6 @@ a{
         margin-left: 10%;
         margin-right: 10%;
     }
-
     h2{
         min-font-size: 40px;
         max-font-size: 40px;
@@ -51,11 +48,9 @@ a{
         max-font-size: 20px;
         min-font-size: 10px;
     }
-
-
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1600px){
     .site-wrapper{
         overflow-x: hidden;
     }
@@ -81,10 +76,10 @@ a{
     }
 
     .img-right > * > img{
-        min-width: 200px;
+        min-width: 100%;
+        max-width: 120%;
     }
 
 }
-
 
 
