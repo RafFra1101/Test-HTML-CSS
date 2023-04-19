@@ -5,10 +5,6 @@
     --border-double: 4px double rgba(0,0,0, 0.75);
 }
 
-.side-menu{
-    display: none;
-}
-
 .img-right{
     display: grid;
     grid-template-columns: repeat(2, auto);

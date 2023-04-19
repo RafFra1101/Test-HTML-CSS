@@ -17,7 +17,7 @@
 
 <body>
 <div class="site-wrapper">
-    <div data-include-html="html/sidemenu.html" class="side-menu view-1"></div>
+    <div data-include-html="html/sidemenu.html" class="side-menu view-1" style="display: none"></div>
     <div data-include-html="html/header.html" class="header view-0"></div>
 
     <div class="main view-0" >
@@ -33,13 +33,15 @@
 
 
 </div>
-
-
-
-
     <script>
         includeHTML();
-        switchView();
+        window.onresize = function (){
+            if(window.innerWidth < 1024){
+                setupDisplaySections();
+            }else{
+                revertDisplaySections();
+            }
+        }
     </script>
 </body>
 </html>
