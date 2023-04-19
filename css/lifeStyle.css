@@ -1,4 +1,9 @@
 
+.life > div:nth-child(2) > a > img{
+    max-width: 80%;
+    min-width: 50%;
+}
+
 @media screen and (min-width: 1600px){
     .life{
         grid-column: 1/4;
@@ -66,24 +71,23 @@
         padding-left: 5%;
     }
 
-    .life > .img-right{
+
+    .life > .img-left-mobile{
         display: flex;
         flex-wrap: wrap;
+
     }
 
-    .life > .img-right > a > img{
-        min-width: 50%;
-        max-width: 100%;
+
+    .life > div:nth-child(n+3) > a > img{
+        max-width: 350px;
+        min-width: 30%;
     }
 
-    .life > .img-right > a + a{
-    }
-
-    .life > .img-right > a + a > h3{
-        padding-left: 2%;
+    .life > .img-left-mobile > a + a > *{
+        padding-left: 5%;
         min-font-size: 30px;
-
-        text-wrap: normal;
+        width: 100%;
 
     }
 }
