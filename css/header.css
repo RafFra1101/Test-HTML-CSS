@@ -45,11 +45,7 @@
 
 
 
-.header-add{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto;
-}
+
 .header-buttons{
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -92,6 +88,24 @@
         align-self: center;
     }
 
+    .header-add{
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 50%);
+        grid-template-rows: auto;
+    }
+
+    .header-add > div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 200px;
+    }
+
+    .header-add > div > a{
+        font-size: 15px;
+    }
+
     .sub{
         background: #02c3aa;
         text-align: center;
@@ -119,8 +133,8 @@
     }
 
     .logo > img{
-        min-width: 150%;
-        max-width: 200%;
+        min-width: 100%;
+        max-width: 120%;
     }
 
     .header-buttons{
@@ -147,10 +161,11 @@
         grid-row: 2;
         grid-column: span 2;
         font-size: 40px;
-        justify-self: left;
+        justify-self: center;
         border-top: var(--border-1);
         border-bottom: var(--border-1);
         padding-right: 50%;
+        overflow-x: scroll;
     }
 
 

@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-width: 800px){
     .puzzle{
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -53,6 +53,10 @@
 }
 
 @media screen and (max-width: 800px){
+    .puzzle > *{
+        border-bottom: var(--border-1);
+    }
+
     .puzzle > *:nth-child(n+1){
         grid-column: span 2;
     }

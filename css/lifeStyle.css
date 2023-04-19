@@ -1,4 +1,5 @@
-@media screen and (min-width: 1024px){
+
+@media screen and (min-width: 1600px){
     .life{
         grid-column: 1/4;
         display: grid;
@@ -37,7 +38,7 @@
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1600px){
     .life{
         display: grid;
         grid-template-areas:
@@ -65,7 +66,24 @@
         padding-left: 5%;
     }
 
+    .life > .img-right{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .life > .img-right > a > img{
+        min-width: 50%;
+        max-width: 100%;
+    }
+
     .life > .img-right > a + a{
+    }
+
+    .life > .img-right > a + a > h3{
         padding-left: 2%;
+        min-font-size: 30px;
+
+        text-wrap: normal;
+
     }
 }

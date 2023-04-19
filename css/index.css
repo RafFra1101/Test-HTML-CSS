@@ -1,4 +1,4 @@
-.main, .header, .side-menu{
+.main, .header, .side-menu, .footer{
 
     --border-1: 1px solid rgba(0,0,0, 0.5);
     --border-2: 1px solid rgba(0,0,0, 0.75);
@@ -50,8 +50,6 @@ a{
     .site-wrapper{
         overflow-x: hidden;
     }
-
-
 
     .main{;
         justify-items: center;

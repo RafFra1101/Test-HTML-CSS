@@ -10,7 +10,7 @@
     border-bottom: var(--border-1);
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1600px){
     .business{
         grid-column: 3/4;
         grid-template-columns: fit-content(300px);
@@ -19,7 +19,7 @@
 
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1600px){
     .business{
         grid-template-columns: repeat(2, auto);
     }

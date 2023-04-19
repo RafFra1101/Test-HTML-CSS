@@ -32,6 +32,14 @@
 
 
 
+.more > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
 @media screen and (min-width: 1024px) {
     .side-header{
         padding-left: 15%;
@@ -39,8 +47,7 @@
     }
 
     .side-icon{
-        min-height: 10px;
-        max-height: 20px;
+        height: 20px;
         border: 1px solid black;
         border-radius: 50%;
         overflow: visible;
@@ -60,9 +67,15 @@
         padding: 2% 2.5% 2% 1.5%;
     }
 
+    .side-social > a{
+        width: 40px;
+        height: 40px;
+    }
 
-    .side-social > .side-icon{
-        padding: 2% 2% 2% 2%;
+
+    .side-social > a > .side-icon{
+        padding: 5px;
+        height: 20px;
     }
 
     .side-buttons > *{
@@ -75,11 +88,13 @@
         padding-top: 1%;
         display: grid;
         grid-template-columns: 60% 40%;
+        grid-template-rows: 150px auto;
         font-size: 16px;
     }
 
     .sections {
         grid-column: 1;
+        grid-row: span 2;
     }
 
 
@@ -102,6 +117,10 @@
 
     .side-buttons{
         padding-left: 5%;
+    }
+
+    .more{
+        grid-area: 2/2;
     }
 }
 
@@ -137,7 +156,7 @@
         padding-left: 0;
     }
 
-    .section-title > h2{
+    .section-title > h2, .sections > ul > *:nth-last-child(-n+1){
         padding-left: 4%;
     }
     .section-list > *{
