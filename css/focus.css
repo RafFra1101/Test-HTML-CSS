@@ -1,0 +1,78 @@
+
+
+@media screen and (min-width: 1024px){
+    .focus{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .focus > *:nth-child(-n+2){
+        grid-column: 1 /-1;
+        border-bottom: var(--border-1);
+    }
+
+    .focus > *:nth-child(n+3){
+        padding-top: 2%;
+        border-bottom: var(--border-1);
+    }
+
+
+    .focus > div:nth-last-child(-n+3){
+        border-left: var(--border-1);
+        padding-left: 2%;
+    }
+
+    .focus > .img-left{
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 1%;
+    }
+
+    .focus > .img-left > a+a > *{
+        padding-left: 2%;
+    }
+
+    .focus > div > a > img{
+        max-width: 60%;
+        min-width: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .focus{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .focus > *:nth-child(-n+2){
+        grid-column: 1 /-1;
+        border-bottom: var(--border-1);
+    }
+
+    .focus > *:nth-child(n+3){
+        padding-top: 2%;
+        border-bottom: var(--border-1);
+    }
+
+
+    .focus > div:nth-last-child(-n+3):nth-child(even){
+        border-left: var(--border-1);
+        padding-left: 2%;
+    }
+
+    .focus > .img-left{
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 1%;
+    }
+
+    .focus > .img-left > a+a > *{
+        padding-left: 2%;
+    }
+
+    .focus > div > a > img{
+        max-width: 60%;
+        min-width: 20%;
+    }
+}

@@ -24,12 +24,16 @@ a{
 }
 
 @media screen and (min-width: 1600px){
+    .site-wrapper{
+        overflow-x: hidden;
+    }
     .main{
         display: grid;
         grid-template-columns: repeat(3, auto);
+        padding-left: 2%;
+        justify-items: center;
         column-gap: 2%;
-        margin-left: 10%;
-        margin-right: 10%;
+
     }
     h2{
         min-font-size: 40px;
@@ -51,7 +55,7 @@ a{
         overflow-x: hidden;
     }
 
-    .main{;
+    .main{
         justify-items: center;
     }
 
