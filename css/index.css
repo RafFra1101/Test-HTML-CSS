@@ -5,13 +5,8 @@
     --border-double: 4px double rgba(0,0,0, 0.75);
 }
 
-.img-right{
+.img-container{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-
-.img-right > * > img{
-    padding-bottom: 5%;
 }
 
 a{
@@ -23,15 +18,15 @@ a{
     text-decoration: 2px rgba(0,0,0,0.5) underline;
 }
 
-@media screen and (min-width: 1600px){
+
+@media screen and (min-width: 1200px){
     .site-wrapper{
         overflow-x: hidden;
     }
     .main{
         display: grid;
-        grid-template-columns: repeat(3, auto);
-        padding-left: 2%;
-        justify-items: center;
+        grid-template-columns: repeat(3, 33%);
+        padding: 0 10% 0 10%;
         column-gap: 2%;
 
     }
@@ -50,7 +45,7 @@ a{
     }
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1200px){
     .site-wrapper{
         overflow-x: hidden;
     }
@@ -73,9 +68,12 @@ a{
         min-font-size: 10px;
     }
 
-    .img-right > * > img{
-        min-width: 100%;
-        max-width: 120%;
+
+}
+
+@media screen and (max-width: 600px){
+    a, p, h2, h3{
+        word-break: break-word;
     }
 
 }

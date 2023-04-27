@@ -10,6 +10,19 @@
     border-bottom: var(--border-1);
 }
 
+.sport > div > .img-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.sport > div > .img-container > img{
+    max-width: 100%;
+    min-width: 70%;
+    justify-self: right;
+    padding-right: 2%;
+}
+
 @media screen and (min-width: 1024px){
     .sport{
         grid-column: 1/4;

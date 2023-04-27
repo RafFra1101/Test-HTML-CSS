@@ -2,7 +2,7 @@
     grid-column: 3/4;
     grid-row: 1/10;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     background: #F9F6F2;
 }
 
@@ -119,17 +119,21 @@
 
 
 
-
-
-@media screen and (max-device-width: 600px){
+@media screen and (max-width: 600px){
 
     .titolo{
         padding-top: 5%;
     }
 
     .face{
-        width: 150px;
-        align-self: flex-end;
+        align-self: center;
+    }
+
+    .face > img{
+        min-width: 100px;
+        max-width: 150px;
+
+
     }
 
     .people-1-person{
@@ -139,6 +143,11 @@
 
     .people-1-person > div{
         width: 75%;
+    }
+
+    .comicImg> img, .opinion-box > div > a > img{
+        max-width: 100%;
+        min-width: 25%;
     }
 
 

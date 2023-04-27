@@ -1,7 +1,19 @@
+.puzzle > div > .img-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.puzzle > div > .img-container > img{
+    justify-self: right;
+    max-width: 100%;
+    min-width: 70%;
+}
+
 @media screen and (min-width: 1024px){
     .puzzle{
         justify-self: left;
-        grid-column: span 4;
+        grid-column: span 3;
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(2, auto);
@@ -22,6 +34,8 @@
         border-left: var(--border-1);
         padding-left: 2%;
     }
+
+
 }
 
 @media screen and (max-width: 1024px) and (min-width: 800px){
@@ -62,7 +76,8 @@
         grid-column: span 2;
     }
 
-    .puzzle > *:nth-last-child(-n+3){
-        padding-top: 2%;
+    .puzzle > div{
+        padding-bottom: 1%;
+        padding-top: 1%;
     }
 }

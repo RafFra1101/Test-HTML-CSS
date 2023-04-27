@@ -43,6 +43,10 @@
         padding-top: 2%;
     }
 
+    .arts > div:nth-last-child(-n+4) > a > img{
+        max-width: 100%;
+        min-width: 50%;
+    }
 
 }
 

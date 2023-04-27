@@ -1,10 +1,6 @@
 
-.life > div:nth-child(2) > a > img{
-    max-width: 80%;
-    min-width: 50%;
-}
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 800px){
     .life{
         grid-column: 1/4;
         display: grid;
@@ -16,7 +12,7 @@
     'a c1 c2'
     'a c3 c4'
     'd e e';
-        grid-template-columns: 750px repeat(2, 400px);
+        grid-template-columns: 50% repeat(2, 25%);
         grid-template-rows: repeat(7, auto);
     }
 
@@ -41,9 +37,18 @@
     .life > .img-right > a + a{
         padding-left: 2%;
     }
+
+    .life > div > a > img{
+        max-width: 80%;
+        min-width: 25%;
+    }
+
+    .life > .img-left{
+        display: flex;
+    }
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 800px){
     .life{
         display: grid;
         grid-template-areas:
@@ -65,6 +70,10 @@
         padding-left: 2%;
     }
 
+    .life > div:nth-child(2) > a > img{
+        max-width: 100%;
+        min-width: 20%;
+    }
 
     .life > *:nth-child(10n+8){
         border-left: var(--border-1);
@@ -80,7 +89,7 @@
 
 
     .life > div:nth-child(n+3) > a > img{
-        max-width: 350px;
+        max-width: 100%;
         min-width: 30%;
     }
 

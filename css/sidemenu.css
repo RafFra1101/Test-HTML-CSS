@@ -175,7 +175,38 @@
         border-bottom: var(--border-1);
     }
 
+}
 
+@media screen and (max-width: 400px){
+    .side-header{
+        grid-template-columns: 100%;
+    }
 
+    .side-header > p{
+        justify-self: center;
+    }
+
+    .side-header > img{
+        max-width: 100%;
+        min-width: 50%;
+        justify-self: center;
+    }
+
+    .side-social{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .side-social > p{
+        grid-row: 1;
+    }
+
+    .side-social > div{
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(6, 40px);
+        column-gap: 10px;
+        overflow-x: scroll;
+    }
 }
 
